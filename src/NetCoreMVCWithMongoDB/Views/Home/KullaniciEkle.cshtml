@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Kullanıcı Ekle";
+}
+
+@model Models.Kullanici
+
+<div class="row">
+    <div class="col-md-12">
+
+        <h2>Kullanıcı Ekle</h2>
+
+        <form asp-controller="Home" asp-action="KullaniciEkle" method="post" enctype="multipart/form-data">
+
+            <input type="text" asp-for="KullaniciAdi" placeholder="Kullanıcı Adı" />
+            <br />
+
+            <input type="text" asp-for="Ad" placeholder="Ad" />
+            <br />
+
+            <input type="text" asp-for="Soyad" placeholder="Soyad" />
+            <br />
+
+            <input type="text" asp-for="Mail" placeholder="Mail" />
+            <br />
+
+            <input type="text" asp-for="Sifre" placeholder="Sifre" />
+            <br />
+            
+            <button type="submit">EKLE</button>
+
+        </form>
+
+    </div>
+</div>
